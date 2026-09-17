@@ -1,0 +1,12 @@
+{"timestamp":"2026-08-11T11:10:00Z","type":"session_meta","payload":{"id":"demo-session-0811","timestamp":"2026-08-11T11:10:00Z","cwd":"/workspace/event-router","conversation_id":"demo-conversation-b","originator":"codex_cli","source":"cli","cli_version":"1.2.0","model_provider":"openai","git":{"repository_url":"https://example.test/platform/event-router.git","branch":"main","commit_hash":"d4e5f6a"}}}
+{"timestamp":"2026-08-11T11:10:01Z","type":"turn_context","payload":{"cwd":"/workspace/event-router","model":"gpt-5","effort":"high"}}
+{"timestamp":"2026-08-11T11:10:02Z","type":"event_msg","payload":{"type":"task_started","turn_id":"demo-turn-0811-a","model_context_window":258400,"collaboration_mode_kind":"default"}}
+{"timestamp":"2026-08-11T11:10:04Z","type":"response_item","payload":{"type":"function_call","name":"exec_command"}}
+{"timestamp":"2026-08-11T11:10:05Z","type":"response_item","payload":{"type":"function_call","name":"read_file"}}
+{"timestamp":"2026-08-11T11:10:06Z","type":"response_item","payload":{"type":"web_search_call","action":{"type":"search"}}}
+{"timestamp":"2026-08-11T11:10:07Z","type":"event_msg","payload":{"type":"context_compacted"}}
+{"timestamp":"2026-08-11T11:10:08Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":1450,"cached_input_tokens":900,"output_tokens":320,"reasoning_output_tokens":140,"total_tokens":1910},"last_token_usage":{"input_tokens":1450,"cached_input_tokens":900,"output_tokens":320,"reasoning_output_tokens":140,"total_tokens":1910}}}}
+{"timestamp":"2026-08-11T11:10:42Z","type":"event_msg","payload":{"type":"task_complete","turn_id":"demo-turn-0811-a","last_agent_message":"Review complete."}}
+{"timestamp":"2026-08-11T11:12:00Z","type":"event_msg","payload":{"type":"task_started","turn_id":"demo-turn-0811-b","model_context_window":258400,"collaboration_mode_kind":"default"}}
+{"timestamp":"2026-08-11T11:12:02Z","type":"response_item","payload":{"type":"function_call","name":"exec_command"}}
+{"timestamp":"2026-08-11T11:12:09Z","type":"event_msg","payload":{"type":"turn_aborted","reason":"interrupted"}}

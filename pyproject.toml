@@ -1,0 +1,45 @@
+[project]
+name = "agent-trace-studio"
+version = "0.9.0"
+description = "Inspect agent execution traces, turns, tools, and model-assisted Q&A in a local dashboard."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography>=50,<51",
+    "google-adk>=2.9,<2.10",
+    "keyring>=25.7,<26",
+    "litellm>=1.101,<1.102",
+    "pydantic-ai-harness[anthropic,skills]>=0.21.0,<0.22",
+    "pydantic-ai-slim[google,openai]>=2.31.0,<2.32",
+]
+
+[project.scripts]
+agent-trace-studio = "agent_trace_studio.cli:main"
+agent-trace-studio-hook = "agent_trace_studio.live_hook:main"
+codex-session-dashboard = "agent_trace_studio.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agent_trace_studio = ["assets/*.css", "assets/*.js", "assets/*.mjs", "agent_skills/*/SKILL.md"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["B", "C4", "E", "F", "I", "PTH", "RUF", "SIM", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["agent_trace_studio", "helpers"]
+
+[tool.ruff.format]
+quote-style = "single"

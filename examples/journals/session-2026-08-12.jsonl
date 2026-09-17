@@ -1,0 +1,8 @@
+{"timestamp":"2026-08-12T14:20:00Z","type":"session_meta","payload":{"id":"demo-session-0812","timestamp":"2026-08-12T14:20:00Z","cwd":"/workspace/console-ui","conversation_id":"demo-conversation-c","originator":"codex_desktop","source":"desktop","cli_version":"1.2.0","model_provider":"openai","git":{"repository_url":"https://example.test/platform/console-ui.git","branch":"fix/table-density","commit_hash":"0f1e2d3"}}}
+{"timestamp":"2026-08-12T14:20:01Z","type":"turn_context","payload":{"cwd":"/workspace/console-ui","model":"gpt-5-mini","effort":"medium"}}
+{"timestamp":"2026-08-12T14:20:02Z","type":"event_msg","payload":{"type":"task_started","turn_id":"demo-turn-0812-a","model_context_window":128000,"collaboration_mode_kind":"default"}}
+{"timestamp":"2026-08-12T14:20:04Z","type":"response_item","payload":{"type":"function_call","name":"view_image"}}
+{"timestamp":"2026-08-12T14:20:07Z","type":"response_item","payload":{"type":"custom_tool_call","name":"apply_patch"}}
+{"timestamp":"2026-08-12T14:20:09Z","type":"event_msg","payload":{"type":"agent_reasoning"}}
+{"timestamp":"2026-08-12T14:20:10Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":610,"cached_input_tokens":120,"output_tokens":240,"reasoning_output_tokens":90,"total_tokens":940},"last_token_usage":{"input_tokens":610,"cached_input_tokens":120,"output_tokens":240,"reasoning_output_tokens":90,"total_tokens":940}}}}
+{"timestamp":"2026-08-12T14:20:33Z","type":"event_msg","payload":{"type":"task_complete","turn_id":"demo-turn-0812-a","last_agent_message":"Dashboard layout updated."}}

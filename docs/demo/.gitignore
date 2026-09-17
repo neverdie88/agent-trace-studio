@@ -1,0 +1,9 @@
+# Only finished public media and reader-facing notices belong in this folder.
+*
+!.gitignore
+!README.md
+!CREDITS.md
+!licenses/
+!licenses/**
+!media/
+!media/**
